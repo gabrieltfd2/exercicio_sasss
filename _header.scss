@@ -1,0 +1,45 @@
+.header {
+    background-color: $cor-azul-escuro;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: $tamanho-padrao-espaco;
+    }
+  
+    .branding {
+      img {
+        width: 120px;
+        height: auto;
+      }
+    }
+  
+    nav {
+      display: flex;
+      align-items: center;
+  
+      ul {
+        display: flex;
+        margin-left: $tamanho-padrao-espaco;
+  
+        li {
+          padding: $tamanho-padrao-espaco;
+  
+          a {
+            color: $cor-branco;
+            text-decoration: none;
+            transition: color 0.3s;
+  
+            &:hover {
+              color: $cor-azul-claro;
+            }
+          }
+        }
+      }
+    }
+  }
